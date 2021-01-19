@@ -190,3 +190,10 @@ UserData is ISOAUTOMAX_ISO125 (0x400000)
 Now it's ISO 125 - verified in practice.
 
 That's it for now, wonder what people would like to do to the camera?
+
+## Update firmware via telnet
+1. (download and) copy the firmware file in the sdcard
+2. mount /sdcard/ in /opt/usr/media (very important) (mount -o bind /sdcard/ /opt/usr/media/)
+3. go to /usr/sbin/ and call "fw_upgrade_start firmware_file.bin"
+4. wait
+5. enjoy it!
